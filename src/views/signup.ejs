@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="https://in.nau.edu/wp-content/uploads/sites/162/2020/03/Book-logo-2-300x300.png" height="50em" width="100em" style="margin-right: 2em;margin-top: 1em;margin-bottom: 1em;"> 
+      <!-- <a href="/" class="navbar-brand">Home</a> -->
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <a href="/" class="navbar-brand" style="font-family: cursive;">Home</a>
+      <ul class="nav navbar-nav">
+       <!-- <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%> -->
+        <!-- <li>
+          <a href="#">Category</a>
+        </li>
+        <li>
+          <a href="#">Category</a>
+        </li>
+        <li>
+          <a href="#">Category</a>
+        </li> -->
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 style="margin-left: 5.5em;font-family: cursive;">SignUp
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-0">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+         <form action="/login" method="GET" class="row gy-2 gx-3 align-items-center" onsubmit="return validate() && validate2() && validate3() && validate4()">
+           <center><h2><b>Sign Up</b></h2></center><br>
+           <p><center><b><h4>Create an Account to Explore More!!</h4></b></center></p>
+           <p><b><center>** Please refer to the instructions provided below to create an account. <br><br></center></b>
+           <center><b> <p style='border: 1px solid red;width: 45em;'>Enter the First Name as <i>'admin'</i>, Last Name as <i>'#123'</i> and Middle Name is not mandatory. <br>Enter a Valid Mail id, Password size must be of minimum 10.</p></b></center>
+           <br>
+           <div class="col-lg-5">
+             <div class="mb-3">
+              <label for="fname" id="fname" style="font-family: 'Times New Roman', Times, serif;"></label>
+               <label for="formGroupExampleInput" class="form-label" style="margin-left: 25em;">First Name**</label>
+               <!-- <label for="fname" id="fname"></label> -->
+               <input type="text" class="form-control" id="firstname" placeholder="Enter Your First Name" style="margin-left: 25em;">
+               <br><br>
+               <label for="formGroupExampleInput" class="form-label" style="margin-left: 25em;">Middle Name</label>
+               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Middle Name" style="margin-left: 25em;"><br><br>
+              
+               <!-- <label for="formGroupExampleInput" class="form-label">Middle Name</label>
+               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Middle Name"> -->
+               <label for="lname" id="lname" style="font-family: 'Times New Roman', Times, serif;"></label>
+               <label for="formGroupExampleInput" class="form-label" style="margin-left: 25em;">Last Name**</label>
+               <input type="text" class="form-control" id="lastname" placeholder="Enter Your Last Name" style="margin-left: 25em;"><br><br>
+               <label for="mail" id="mail" style="font-family: 'Times New Roman', Times, serif;"></label>
+               <label for="formGroupExampleInput" class="form-label" style="margin-left: 25em;">Email Id**</label>
+               <input type="email" class="form-control" id="email" placeholder="Enter a valid mail id" style="margin-left: 25em;">
+               <!-- <label for="formGroupExampleInput" class="form-label">Email Id</label>
+               <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter a valid mail id"> -->
+              <br><br>
+              <label for="pswd" id="pswd" style="font-family: 'Times New Roman', Times, serif;"></label>
+               <label for="password" class="form-label" style="margin-left: 25em;">Password**</label>
+               <input class="form-control" type="password" id="password" placeholder="Enter a password" style="margin-left: 25em;">
+              </div>
+              <div><p><b><center><br><br>( ** Please Remember your Password while logging in !! )</center></b></p></div>
+           </div>
+           
+           
+           <div class="col-lg-5">
+            <div class="mb-3">
+              <!-- <label for="formGroupExampleInput" class="form-label" style="margin-left: 7em;">Middle Name</label>
+               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Middle Name" style="margin-left: 7em;"><br><br> -->
+              
+               <!-- <label for="formGroupExampleInput" class="form-label">Email Id</label>
+               <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter a valid mail id"> -->
+              </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-7"><br><br>
+          <div class="mb-3">
+            <!-- <label for="password" class="form-label">Password</label>
+            <input class="form-control" type="password" id="password" placeholder="Enter a password"> -->
+          </div></div>
+          </div>
+          <div col-lg-5></div><br><br>
+          <center>
+          <div class="col-auto">
+            <div col-lg-2>
+              <button type="submit" class="btn btn-primary" style="margin-bottom: 2em;">Sign Up</button>
+            </div>
+          </div>
+          </center>
+          <div col-lg-5></div>
+         </form> 
+          
+          
+        <!-- <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a> -->
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    <script>
+      let firstname = document.getElementById("firstname");
+      let fname = document.getElementById("fname");
+
+function validate(){
+    if(firstname.value == ""){
+
+        alert("** Fields cannot be blank!  Please enter valid First Name !!");
+        return false;
+    }
+
+    else if(firstname.value == "admin"){
+            fname.style.color="green";
+            fname.innerHTML="Valid..........................";
+            firstname.style.border="2px solid green";
+            return true;
+    }
+    else{
+            fname.style.color="red";
+            fname.innerHTML = "(**.....Please Enter Your First Name as 'admin' !!.......)";
+            firstname.style.border="2px solid red";
+            return false;
+    }
+    
+}
+    
+    
+let lastname = document.getElementById("lastname");
+let lname = document.getElementById("lname");
+
+function validate2(){
+    if(lastname.value == ""){
+
+        alert("** Fields cannot be blank!  Please enter valid Last Name !!");
+        return false;
+    }
+
+    else if(lastname.value == "#123"){
+            lname.style.color="green";
+            lname.innerHTML="Valid..........................";
+            lastname.style.border="2px solid green";
+            return true;
+    }
+    else{
+            lname.style.color="red";
+            lname.innerHTML = "(**.....Please Enter Your Last Name as '#123' !!.......)";
+            lastname.style.border="2px solid red";
+            return false;
+    }
+    
+}
+    
+
+
+let email = document.getElementById("email");
+let mail = document.getElementById("mail");
+
+function validate3(){
+  let regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
+    if(regexp.test(email.value)){
+              mail.innerHTML = "Valid................";
+              mail.style.color="green";
+              return true;
+    }
+    
+    else{
+            mail.style.color="red";
+            mail.innerHTML = "(**.....Please Enter Your Valid Mail Id !!.......)";
+            lastname.style.border="2px solid red";
+            return false;
+    }
+    
+}
+  
+
+
+let password = document.getElementById("password");
+let pswd = document.getElementById("pswd");
+
+function validate3(){
+    if(password.value == ""){
+
+        alert("** Fields cannot be blank!  Please enter valid Password !!");
+        return false;
+    }
+
+    else if(password.value.length<=5){
+            pswd.style.color="red";
+            pswd.innerHTML="Password is too short !!";
+            password.style.border="2px solid red";
+            return false;
+    }
+    else if(password.value.length>=6 && password.value.length<=10){
+            pswd.style.color="orange";
+            pswd.innerHTML = "Password is moderate !!";
+            password.style.border="2px solid orange";
+            return false;
+    }
+    else{
+      pswd.style.color="green";
+      pswd.innerHTML="Password is strong !!";
+      password.style.border = "2px solid green";
+      return true;
+    }
+    
+}
+    
+    </script>
+	</body>
+</html>
